@@ -1,0 +1,199 @@
+romo18@romo18-GL72M-7RDX:~/ros_projects/action_tutorial/src$ catkin_create_pkg my_robot_msgs roscpp rospy std_msgs actionlib_msgs
+Created file my_robot_msgs/CMakeLists.txt
+Created file my_robot_msgs/package.xml
+Created folder my_robot_msgs/include/my_robot_msgs
+Created folder my_robot_msgs/src
+Successfully created files in /home/romo18/ros_projects/action_tutorial/src/my_robot_msgs. Please adjust the values in package.xml.
+romo18@romo18-GL72M-7RDX:~/ros_projects/action_tutorial/src$ 
+romo18@romo18-GL72M-7RDX:~/ros_projects/action_tutorial/src$ cd my_robot_msgs/
+romo18@romo18-GL72M-7RDX:~/ros_projects/action_tutorial/src/my_robot_msgs$ ls
+CMakeLists.txt  include  package.xml  src
+romo18@romo18-GL72M-7RDX:~/ros_projects/action_tutorial/src/my_robot_msgs$ vim package.xml 
+romo18@romo18-GL72M-7RDX:~/ros_projects/action_tutorial/src/my_robot_msgs$ vim CMakeLists.txt 
+romo18@romo18-GL72M-7RDX:~/ros_projects/action_tutorial/src/my_robot_msgs$ rm -rf include src
+romo18@romo18-GL72M-7RDX:~/ros_projects/action_tutorial/src/my_robot_msgs$ ls
+CMakeLists.txt  package.xml
+romo18@romo18-GL72M-7RDX:~/ros_projects/action_tutorial/src/my_robot_msgs$ mkdir action
+romo18@romo18-GL72M-7RDX:~/ros_projects/action_tutorial/src/my_robot_msgs$ ls
+action  CMakeLists.txt  package.xml
+romo18@romo18-GL72M-7RDX:~/ros_projects/action_tutorial/src/my_robot_msgs$ cd action/
+romo18@romo18-GL72M-7RDX:~/ros_projects/action_tutorial/src/my_robot_msgs/action$ vim CountUntil.action
+romo18@romo18-GL72M-7RDX:~/ros_projects/action_tutorial/src/my_robot_msgs/action$ ls
+CountUntil.action
+romo18@romo18-GL72M-7RDX:~/ros_projects/action_tutorial/src/my_robot_msgs/action$ cd ..
+romo18@romo18-GL72M-7RDX:~/ros_projects/action_tutorial/src/my_robot_msgs$ ls
+action  CMakeLists.txt  package.xml
+romo18@romo18-GL72M-7RDX:~/ros_projects/action_tutorial/src/my_robot_msgs$ vim CMakeLists.txt 
+romo18@romo18-GL72M-7RDX:~/ros_projects/action_tutorial/src/my_robot_msgs$ cd ../..
+romo18@romo18-GL72M-7RDX:~/ros_projects/action_tutorial$ catkin_make
+Base path: /home/romo18/ros_projects/action_tutorial
+Source space: /home/romo18/ros_projects/action_tutorial/src
+Build space: /home/romo18/ros_projects/action_tutorial/build
+Devel space: /home/romo18/ros_projects/action_tutorial/devel
+Install space: /home/romo18/ros_projects/action_tutorial/install
+####
+#### Running command: "cmake /home/romo18/ros_projects/action_tutorial/src -DCATKIN_DEVEL_PREFIX=/home/romo18/ros_projects/action_tutorial/devel -DCMAKE_INSTALL_PREFIX=/home/romo18/ros_projects/action_tutorial/install -G Unix Makefiles" in "/home/romo18/ros_projects/action_tutorial/build"
+####
+-- Using CATKIN_DEVEL_PREFIX: /home/romo18/ros_projects/action_tutorial/devel
+-- Using CMAKE_PREFIX_PATH: /home/romo18/ros_projects/action_tutorial/devel;/opt/ros/melodic
+-- This workspace overlays: /home/romo18/ros_projects/action_tutorial/devel;/opt/ros/melodic
+-- Found PythonInterp: /usr/bin/python2 (found suitable version "2.7.17", minimum required is "2") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python2
+-- Using Debian Python package layout
+-- Using empy: /usr/bin/empy
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /home/romo18/ros_projects/action_tutorial/build/test_results
+-- Found gtest sources under '/usr/src/googletest': gtests will be built
+-- Found gmock sources under '/usr/src/googletest': gmock will be built
+-- Found PythonInterp: /usr/bin/python2 (found version "2.7.17") 
+-- Using Python nosetests: /usr/bin/nosetests-2.7
+-- catkin 0.7.29
+-- BUILD_SHARED_LIBS is on
+-- BUILD_SHARED_LIBS is on
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- ~~  traversing 1 packages in topological order:
+-- ~~  - my_robot_msgs
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- +++ processing catkin package: 'my_robot_msgs'
+-- ==> add_subdirectory(my_robot_msgs)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- Generating .msg files for action my_robot_msgs/CountUntil /home/romo18/ros_projects/action_tutorial/src/my_robot_msgs/action/CountUntil.action
+Generating for action CountUntil
+-- my_robot_msgs: 7 messages, 0 services
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/romo18/ros_projects/action_tutorial/build
+####
+#### Running command: "make -j8 -l8" in "/home/romo18/ros_projects/action_tutorial/build"
+####
+Scanning dependencies of target _my_robot_msgs_generate_messages_check_deps_CountUntilAction
+Scanning dependencies of target _my_robot_msgs_generate_messages_check_deps_CountUntilFeedback
+Scanning dependencies of target std_msgs_generate_messages_eus
+Scanning dependencies of target actionlib_msgs_generate_messages_eus
+Scanning dependencies of target _my_robot_msgs_generate_messages_check_deps_CountUntilActionResult
+Scanning dependencies of target _my_robot_msgs_generate_messages_check_deps_CountUntilResult
+Scanning dependencies of target _my_robot_msgs_generate_messages_check_deps_CountUntilActionGoal
+Scanning dependencies of target _my_robot_msgs_generate_messages_check_deps_CountUntilGoal
+[  0%] Built target actionlib_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_eus
+Scanning dependencies of target _my_robot_msgs_generate_messages_check_deps_CountUntilActionFeedback
+[  0%] Built target _my_robot_msgs_generate_messages_check_deps_CountUntilActionGoal
+[  0%] Built target _my_robot_msgs_generate_messages_check_deps_CountUntilActionResult
+Scanning dependencies of target std_msgs_generate_messages_py
+[  0%] Built target _my_robot_msgs_generate_messages_check_deps_CountUntilAction
+[  0%] Built target _my_robot_msgs_generate_messages_check_deps_CountUntilResult
+[  0%] Built target _my_robot_msgs_generate_messages_check_deps_CountUntilFeedback
+[  0%] Built target _my_robot_msgs_generate_messages_check_deps_CountUntilGoal
+Scanning dependencies of target actionlib_msgs_generate_messages_py
+Scanning dependencies of target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_py
+Scanning dependencies of target actionlib_msgs_generate_messages_lisp
+Scanning dependencies of target std_msgs_generate_messages_nodejs
+Scanning dependencies of target actionlib_msgs_generate_messages_nodejs
+Scanning dependencies of target actionlib_msgs_generate_messages_cpp
+[  0%] Built target actionlib_msgs_generate_messages_py
+Scanning dependencies of target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target actionlib_msgs_generate_messages_lisp
+[  0%] Built target actionlib_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target actionlib_msgs_generate_messages_cpp
+[  0%] Built target _my_robot_msgs_generate_messages_check_deps_CountUntilActionFeedback
+Scanning dependencies of target my_robot_msgs_generate_messages_eus
+Scanning dependencies of target my_robot_msgs_generate_messages_nodejs
+Scanning dependencies of target my_robot_msgs_generate_messages_py
+Scanning dependencies of target my_robot_msgs_generate_messages_lisp
+Scanning dependencies of target my_robot_msgs_generate_messages_cpp
+[  2%] Generating EusLisp code from my_robot_msgs/CountUntilGoal.msg
+[  5%] Generating EusLisp code from my_robot_msgs/CountUntilResult.msg
+[  8%] Generating EusLisp code from my_robot_msgs/CountUntilActionResult.msg
+[ 10%] Generating EusLisp code from my_robot_msgs/CountUntilActionGoal.msg
+[ 13%] Generating Python from MSG my_robot_msgs/CountUntilResult
+[ 18%] Generating Javascript code from my_robot_msgs/CountUntilResult.msg
+[ 18%] Generating C++ code from my_robot_msgs/CountUntilResult.msg
+[ 21%] Generating Lisp code from my_robot_msgs/CountUntilResult.msg
+[ 24%] Generating Javascript code from my_robot_msgs/CountUntilGoal.msg
+[ 27%] Generating Lisp code from my_robot_msgs/CountUntilGoal.msg
+[ 29%] Generating Lisp code from my_robot_msgs/CountUntilActionGoal.msg
+[ 32%] Generating Lisp code from my_robot_msgs/CountUntilActionResult.msg
+[ 35%] Generating C++ code from my_robot_msgs/CountUntilGoal.msg
+[ 37%] Generating EusLisp code from my_robot_msgs/CountUntilActionFeedback.msg
+[ 40%] Generating EusLisp code from my_robot_msgs/CountUntilAction.msg
+[ 43%] Generating Javascript code from my_robot_msgs/CountUntilActionGoal.msg
+[ 45%] Generating C++ code from my_robot_msgs/CountUntilActionGoal.msg
+[ 48%] Generating Lisp code from my_robot_msgs/CountUntilActionFeedback.msg
+[ 51%] Generating Lisp code from my_robot_msgs/CountUntilAction.msg
+[ 56%] Generating Javascript code from my_robot_msgs/CountUntilActionResult.msg
+[ 56%] Generating Lisp code from my_robot_msgs/CountUntilFeedback.msg
+[ 59%] Generating Javascript code from my_robot_msgs/CountUntilActionFeedback.msg
+[ 62%] Generating EusLisp code from my_robot_msgs/CountUntilFeedback.msg
+[ 64%] Generating EusLisp manifest code for my_robot_msgs
+[ 67%] Generating Javascript code from my_robot_msgs/CountUntilAction.msg
+[ 70%] Generating C++ code from my_robot_msgs/CountUntilActionResult.msg
+[ 70%] Built target my_robot_msgs_generate_messages_lisp
+[ 72%] Generating Python from MSG my_robot_msgs/CountUntilGoal
+[ 75%] Generating C++ code from my_robot_msgs/CountUntilActionFeedback.msg
+[ 78%] Generating C++ code from my_robot_msgs/CountUntilAction.msg
+[ 81%] Generating C++ code from my_robot_msgs/CountUntilFeedback.msg
+[ 83%] Generating Javascript code from my_robot_msgs/CountUntilFeedback.msg
+[ 83%] Built target my_robot_msgs_generate_messages_nodejs
+[ 86%] Generating Python from MSG my_robot_msgs/CountUntilActionGoal
+[ 89%] Generating Python from MSG my_robot_msgs/CountUntilActionResult
+[ 91%] Generating Python from MSG my_robot_msgs/CountUntilActionFeedback
+[ 94%] Generating Python from MSG my_robot_msgs/CountUntilAction
+[ 94%] Built target my_robot_msgs_generate_messages_cpp
+[ 97%] Generating Python from MSG my_robot_msgs/CountUntilFeedback
+[100%] Generating Python msg __init__.py for my_robot_msgs
+[100%] Built target my_robot_msgs_generate_messages_eus
+[100%] Built target my_robot_msgs_generate_messages_py
+Scanning dependencies of target my_robot_msgs_generate_messages
+[100%] Built target my_robot_msgs_generate_messages
+romo18@romo18-GL72M-7RDX:~/ros_projects/action_tutorial$ cd devel/
+romo18@romo18-GL72M-7RDX:~/ros_projects/action_tutorial/devel$ ls
+cmake.lock  lib               local_setup.zsh  _setup_util.py
+env.sh      local_setup.bash  setup.bash       setup.zsh
+include     local_setup.sh    setup.sh         share
+romo18@romo18-GL72M-7RDX:~/ros_projects/action_tutorial/devel$ cd include/
+romo18@romo18-GL72M-7RDX:~/ros_projects/action_tutorial/devel/include$ ls
+my_robot_msgs
+romo18@romo18-GL72M-7RDX:~/ros_projects/action_tutorial/devel/include$ cd my_robot_msgs/
+romo18@romo18-GL72M-7RDX:~/ros_projects/action_tutorial/devel/include/my_robot_msgs$ ls
+CountUntilActionFeedback.h  CountUntilActionResult.h  CountUntilResult.h
+CountUntilActionGoal.h      CountUntilFeedback.h
+CountUntilAction.h          CountUntilGoal.h
+romo18@romo18-GL72M-7RDX:~/ros_projects/action_tutorial/devel/include/my_robot_msgs$ cd ../..
+romo18@romo18-GL72M-7RDX:~/ros_projects/action_tutorial/devel$ cd share/
+romo18@romo18-GL72M-7RDX:~/ros_projects/action_tutorial/devel/share$ ls
+common-lisp  gennodejs  my_robot_msgs  roseus
+romo18@romo18-GL72M-7RDX:~/ros_projects/action_tutorial/devel/share$ cd my_robot_msgs/
+romo18@romo18-GL72M-7RDX:~/ros_projects/action_tutorial/devel/share/my_robot_msgs$ ls
+cmake  msg
+romo18@romo18-GL72M-7RDX:~/ros_projects/action_tutorial/devel/share/my_robot_msgs$ cd msg/
+romo18@romo18-GL72M-7RDX:~/ros_projects/action_tutorial/devel/share/my_robot_msgs/msg$ ls
+CountUntilActionFeedback.msg  CountUntilActionResult.msg  CountUntilResult.msg
+CountUntilActionGoal.msg      CountUntilFeedback.msg
+CountUntilAction.msg          CountUntilGoal.msg
+romo18@romo18-GL72M-7RDX:~/ros_projects/action_tutorial/devel/share/my_robot_msgs/msg$ cat CountUntilGoal.msg 
+# ====== DO NOT MODIFY! AUTOGENERATED FROM AN ACTION DEFINITION ======
+#goal
+int64 max_number
+float64 wait_duration
+romo18@romo18-GL72M-7RDX:~/ros_projects/action_tutorial/devel/share/my_robot_msgs/msg$ cat CountUntilResult.msg 
+# ====== DO NOT MODIFY! AUTOGENERATED FROM AN ACTION DEFINITION ======
+#result
+int64 count
+romo18@romo18-GL72M-7RDX:~/ros_projects/action_tutorial/devel/share/my_robot_msgs/msg$ cat CountUntilFeedback.msg 
+# ====== DO NOT MODIFY! AUTOGENERATED FROM AN ACTION DEFINITION ======
+#feedback
+float64 percentage
+
+romo18@romo18-GL72M-7RDX:~/ros_projects/action_tutorial/devel/share/my_robot_msgs/msg$ cat CountUntilActionGoal.msg 
+# ====== DO NOT MODIFY! AUTOGENERATED FROM AN ACTION DEFINITION ======
+
+Header header
+actionlib_msgs/GoalID goal_id
+CountUntilGoal goal
+romo18@romo18-GL72M-7RDX:~/ros_projects/action_tutorial/devel/share/my_robot_msgs/msg$ cd ../../../..
+

@@ -1,0 +1,11 @@
+#goal
+int64 position
+int64 velocity
+---
+#result
+int64 position
+string message
+---
+#feedback
+int64 current_position
+

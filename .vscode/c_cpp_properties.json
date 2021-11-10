@@ -1,0 +1,19 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/romo18/ros_projects/simple_action_tutorial/devel/include/**",
+        "/home/romo18/ros_projects/ros_for_beginners/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/romo18/ros_projects/simple_action_tutorial/src/my_robot_tutorials/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}

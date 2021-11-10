@@ -1,0 +1,2 @@
+set(my_robot_msgs_MESSAGE_FILES "msg/CountUntilAction.msg;msg/CountUntilActionGoal.msg;msg/CountUntilActionResult.msg;msg/CountUntilActionFeedback.msg;msg/CountUntilGoal.msg;msg/CountUntilResult.msg;msg/CountUntilFeedback.msg;msg/LineRobotAction.msg;msg/LineRobotActionGoal.msg;msg/LineRobotActionResult.msg;msg/LineRobotActionFeedback.msg;msg/LineRobotGoal.msg;msg/LineRobotResult.msg;msg/LineRobotFeedback.msg")
+set(my_robot_msgs_SERVICE_FILES "")
